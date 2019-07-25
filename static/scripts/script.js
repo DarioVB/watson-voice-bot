@@ -74,7 +74,9 @@ function play(inputText) {
 
   const url = '/api/text-to-speech?voice=es-ES_LauraV3Voice';
   const params = 'text=' + inputText;
+  console.log(url, params)
   const request = new XMLHttpRequest();
+
   request.open('POST', url, true);
   request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   request.responseType = 'arraybuffer';
