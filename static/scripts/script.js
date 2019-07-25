@@ -72,7 +72,7 @@ function callConversation(res) {
 function play(inputText) {
   let buf;
 
-  const url = '/api/text-to-speech?voice=es-ES_LauraV3Voice';
+  const url = '/api/text-to-speech';
   const params = 'text=' + inputText;
   console.log(url, params)
   const request = new XMLHttpRequest();
