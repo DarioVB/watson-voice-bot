@@ -153,7 +153,7 @@ def getSpeechFromText():
             inputText,
             'audio/wav',
             'es-ES_LauraV3Voice').get_result()
-        
+
 
         data = audioOut.content
 
@@ -178,7 +178,7 @@ def getTextFromSpeech():
             content_type='audio/wav',
             timestamps=True,
             word_confidence=True,
-            smart_formatting=True).get_result()
+            smart_formatting=True, model='es-ES_NarrowbandModel').get_result()
 
     # Ask user to repeat if STT can't transcribe the speech
     if len(response['results']) < 1:
