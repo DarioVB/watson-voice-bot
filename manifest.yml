@@ -23,5 +23,5 @@ applications:
   - wvb-texttospeech-service
   - wvb-speechtotext-service
 env:
-  WORKSPACE_ID: placeholder
-  ASSISTANT_IAM_APIKEY: placeholder
+  WORKSPACE_ID: 79b1b7d8-5ddb-4507-9aed-4a9bc11982f1
+  ASSISTANT_IAM_APIKEY: PmMYUUQUPY6QESaVbfdRjLxV68bY5iDzRh4CRdv_1iBu
